@@ -8,14 +8,15 @@
 ` ssh-keygen -t rsa `
 
 ****
+```
 Generating public/private rsa key pair.
 Enter file in which to save the key (/c/Users/Alexander/.ssh/id_rsa):**вводим название файла с будущеим ключом, например git-ssh**
 Enter passphrase (empty for no passphrase):**[Вводим пароль]**
 Enter same passphrase again:**[Вводим пароль]**
 Your identification has been saved in git-ssh.
 Your public key has been saved in git-ssh.pub.
-
-	Название и расположение файла для сохранения ключа можно указывать для удобства. Можно и  просто нжать Enter, чтобы сохранить ключ в файле по умолчанию (~/.ssh/id_rsa). Затем надо дважды ввести пароль (который можно оставить пустым, чтобы потом не вводить каждый раз, да, это безопасно).
+```
+ Название и расположение файла для сохранения ключа можно указывать для удобства. Можно и  просто нжать Enter, чтобы сохранить ключ в файле по умолчанию (~/.ssh/id_rsa). Затем надо дважды ввести пароль (который можно оставить пустым, чтобы потом не вводить каждый раз, да, это безопасно).
 ****
 
 У нас появились 2 файла ключа:
@@ -41,13 +42,15 @@ Your public key has been saved in git-ssh.pub.
 ###### Например нам нужно сделать авторизацию на сервере bitbucket.org для двух пользователей
 
 1. создадим ключи для авторизации:
-	первый:
+
+первый:
 ```
 	$ ssh-keygen -t rsa ~/.ssh/bitbucket1
 	Your identification has been saved in ~/.ssh/bitbucket1
 	Your public key has been saved in ~/.ssh/bitbucket1.pub
 ```
-	второй:
+
+второй:
 ```
 $ ssh-keygen -t rsa ~/.ssh/bitbucket2
 Your identification has been saved in ~/.ssh/bitbucket2
