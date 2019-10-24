@@ -74,9 +74,13 @@ identityfile C:\Users\Alexander\.ssh\bitbucket2
 
 ###### Проверим, есть ли у нас доступ:
 $ ssh -T bitbucket1
+
 You can use git or hg to connect to Bitbucket. Shell access is disabled
+
 $ ssh -T bitbucket2
+
 You can use git or hg to connect to Bitbucket. Shell access is disabled
+
 
 Все отлично, доступ есть.
 
