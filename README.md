@@ -7,6 +7,9 @@
 Ключей еще нет, директория пуста. Сгенерируем ключи командой 
 ` ssh-keygen -t rsa `
 
+Или новый формат для Linux:
+` ssh-keygen -t ed25519 -C "abyss-soft@yandex.com" `
+
 ****
 ```
 Generating public/private rsa key pair.
